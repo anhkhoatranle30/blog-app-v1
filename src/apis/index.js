@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "http://localhost:3001";
+const URL = "https://khoa-blog-app-v1-api.herokuapp.com/";
 
 export const fetchPosts = () => axios.get(`${URL}/posts`);
 
