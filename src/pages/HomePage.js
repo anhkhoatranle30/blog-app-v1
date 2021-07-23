@@ -1,12 +1,12 @@
-import React, { useCallback } from "react";
 import { Container, Fab } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
+import React, { useCallback } from "react";
+import { useDispatch } from "react-redux";
+import CreatePostModal from "../components/CreatePostModal";
 import Header from "../components/Header";
 import PostList from "../components/PostList";
-import useStyles from "./styles";
-import { useDispatch } from "react-redux";
 import { showModal } from "../redux/actions";
-import CreatePostModal from "../components/CreatePostModal";
+import useStyles from "./styles";
 
 export default function HomePage() {
   const classes = useStyles();
